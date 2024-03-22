@@ -1,25 +1,8 @@
-@font-face {
-  font-family: "Inter", sans-serif;
-  src: url("Inter/static/Inter-Medium.ttf");
-}
-
-@font-face {
-  font-family: "InterThin", sans-serif;
-  src: url("Inter/static/Inter-Thin.ttf");
-}
-
 * {
   margin: 0;
   padding: 0;
   font-size: 1em;
   box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 nav {
@@ -28,15 +11,37 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  gap: 12rem;
+  width: 100%;
 }
 
-.lo-notion {
-  height: 40px;
-}
-
-.btn-hmg {
+nav > img {
   height: 30px;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-rows: min-content;
+  margin: 0px 25px;
+}
+
+.art__main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.art__cont__div3 > img {
+  width: 400px;
 }
 
 h1 {
@@ -44,7 +49,7 @@ h1 {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 2.8em;
-  padding: 1rem 1rem 0rem 1rem;
+  padding: 3rem 1rem 0rem 1rem;
   line-height: 45px;
 }
 
